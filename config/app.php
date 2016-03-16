@@ -22,7 +22,7 @@ return [
 	|
 	| The application name for use within the UI of the application
 	*/
-    'name' => 'Laravel 5 Bootstrap',
+    'name' => 'Super Walrus',
 
     /*
     |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -189,6 +189,7 @@ return [
         HieuLe\Active\ActiveServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         /*
          * Has to override the Collective\Html\HtmlServiceProvider form singleton
